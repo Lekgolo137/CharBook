@@ -6,4 +6,4 @@ Utiliza plantillas Jinja2, almacenamiento en Datastore, e inicio de sesión con 
 
 El propósito de la aplicación es permitir a los usuarios la creación y almacenamiento de personajes.
 
-Por ejemplo, al escribir un libro o el guión de una película podría utilizarse esta aplicación para ir creando y almacenando los diferente personajes que participan.
+Por ejemplo, al escribir un libro o el guión de una película podría utilizarse esta aplicación para ir creando y almacenando los diferentes personajes que participan.
