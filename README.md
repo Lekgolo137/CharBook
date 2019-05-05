@@ -1,4 +1,4 @@
-[Proyecto ALS 2019]
+Proyecto ALS 2019
 
 Aplicación web creada con Google Application Engine en Python 2 utilizando PyCharm.
 
