@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title>Proyecto - Almacenador de personajes</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+    html, body {
+        height: 100%;
+    }
+    body {
+        display: flex;
+    }
+    div {
+        margin: auto;
+    }
+    table {
+        margin-top: 50px;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 10px;
+    }
+    td:first-child {
+        text-align: left;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    [name="logout"] {
+        float: right;
+    }
+</style>
+<div>
+    <button name="new" type="button" onclick="window.location.href = '/character';">Crear nuevo personaje</button>
+    <button name="logout" type="button" onclick="window.location.href = '/logout';">Logout</button>
+    <table>
+        <tr>
+            <th>Personaje</th>
+
+            <th>Eliminar</th>
+        </tr>

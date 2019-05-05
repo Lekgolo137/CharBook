@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title>Proyecto - Login</title>
+<style>
+    html, body{
+        height: 100%;
+    }
+    body, p{
+        margin: 0;
+    }
+    body{
+        display: flex;
+    }
+    form, input[type="submit"]{
+        margin: auto;
+    }
+    input{
+        display: block;
+    }
+    input[name="username"], input[name="password"]{
+        margin-bottom: 20px;
+    }
+</style>
+<form method="post">
+    <p>Nombre de usuario:</p>
+    <input type="text" name="username">
+    <p>Contraseña:</p>
+    <input type="password" name="password">
+    <input type="submit" value="Entrar">
+</form>

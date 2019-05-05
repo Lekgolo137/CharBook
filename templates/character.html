@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title>Proyecto - Personaje</title>
+<style>
+    html, body {
+        height: 100%;
+    }
+    body, form {
+        display: flex;
+    }
+    form {
+        flex-direction: column;
+        margin: auto;
+        width: 50%;
+        height: 50%;
+    }
+    p {
+        margin: 0;
+    }
+    [name="description"], [name="name"]{
+        margin-bottom: 20px;
+    }
+    textarea {
+        flex-grow: 1;
+    }
+    div {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    [name="save"] {
+        float: right;
+    }
+</style>
+<form method="post">
+    <p>Nombre:</p>
+    <input type="text" name="name" id="name" value="{{ name }}">
+    <p>Descripción:</p>
+    <textarea name="description" id="description">{{ description }}</textarea>
+    <div>
+        <button name="cancel" type="button" onclick="window.location.href = '/';">Cancelar</button>
+        <input name="save" type="submit" value="Guardar">
+    </div>
+</form>
