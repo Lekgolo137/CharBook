@@ -1,0 +1,31 @@
+application: proyecto
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /
+  script: main.app
+  login: required
+  auth_fail_action: redirect
+
+- url: /logout
+  script: logout.app
+
+- url: /character.*
+  script: character.app
+  login: required
+  auth_fail_action: redirect
+
+- url: /delete.*
+  script: delete.app
+  login: required
+  auth_fail_action: redirect
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+
+- name: jinja2
+  version: "2.6"
